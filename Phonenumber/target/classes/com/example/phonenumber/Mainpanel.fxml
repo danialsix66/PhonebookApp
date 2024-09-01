@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="add" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phonenumber.CMainpanel">
+
+   <children>
+      <Text layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fristname">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="86.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phonenumber">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="2.0" layoutY="64.0" onMouseClicked="#selectcontact" prefHeight="532.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="Column_name" prefWidth="223.0" text="Name" />
+            <TableColumn fx:id="Column_phonenumber" prefWidth="293.0" text="Phonenumber" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="2.0" layoutY="39.0" onKeyTyped="#search" prefHeight="25.0" prefWidth="545.0" promptText="Search" />
+      <Button layoutX="548.0" layoutY="39.0" mnemonicParsing="false" onAction="#add" text="Add" />
+   </children>
+</Pane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage fx:id="stage" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phonenumber.CAddPanel">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="171.0" prefWidth="282.0">
+            <children>
+               <TextField fx:id="textField_name" layoutX="87.0" layoutY="54.0" prefHeight="25.0" prefWidth="193.0" />
+               <TextField fx:id="textField_Phonenumber" layoutX="87.0" layoutY="90.0" prefHeight="25.0" prefWidth="193.0" />
+               <Button layoutX="216.0" layoutY="15.0" mnemonicParsing="false" onAction="#cancel" text="CANCEL" />
+               <Button layoutX="11.0" layoutY="15.0" mnemonicParsing="false" onAction="#save" text="SAVE" />
+               <Text layoutX="17.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+               <Text layoutX="10.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber" />
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
